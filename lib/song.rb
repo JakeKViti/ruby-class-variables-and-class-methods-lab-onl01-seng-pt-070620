@@ -28,10 +28,21 @@ class Song
   end
 
   def self.genre_count
+<<<<<<< HEAD
     @@genres.group_by{|array| array}.map{|name, num| [name, num.length]}.to_h
   end
 
   def self.artist_count
     @@artists.group_by{|array| array}.map{|name, num| [name, num.length]}.to_h
+=======
+    hash = {}
+    hash = @@genres
+    return hash
+  end
+
+  def self.artist_count
+    hash = {}
+    return hash
+>>>>>>> d40d5b182d38b0151027355d94a7ea98b5b3a74e
   end
 end
